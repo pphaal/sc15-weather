@@ -1,0 +1,5 @@
+#titleBar { font-weight: normal; }
+.legend { width:100%; text-align:center; }
+.trend { width:100%; height:100%; }
+.col { display: inline-block; height: 8px; width:8px; border: 1px solid black; }
+.ui-dialog{font-size: 80%;}

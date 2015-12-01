@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>sFlow-RT SC15 Real-time Weathermap</title>
+<link rel="stylesheet" href="../../../inc/inmsf/main.css" type="text/css">
+<link rel="stylesheet" href="../../../inc/jquery-ui/jquery-ui.structure.min.css" type="text/css">
+<link rel="stylesheet" href="../../../inc/jquery-ui/jquery-ui.theme.css" type="text/css">
+<link rel="stylesheet" href="../../../inc/stripchart.css" type="text/css"/>
+<link rel="stylesheet" href="css/app.css" type="text/css"/>
+<script type="text/javascript" src="../../../inc/jquery.min.js"></script>
+<script type="text/javascript" src="../../../inc/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../../inc/jquery.stripchart.js"></script>
+<script type="text/javascript" src="../../../inc/stripchart.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+<div id="titleBar"><div id="product"><span id="logo"></span>sFlow-RT SC15 Real-time Weathermap</div></div>
+<div id="content">
+<object id="svgObj" type="image/svg+xml" data="1.svg"></object>
+<div class="legend">
+Link Utilization:
+<div class="col" style="background:gray"></div> Unknown,
+<div class="col" style="background:dodgerblue"></div> 0% - 0.1%,
+<div class="col" style="background:cyan"></div> 0.1% - 1%,
+<div class="col" style="background:lime"></div> 1% - 10%,
+<div class="col" style="background:yellow"></div> 10% - 50%,
+<div class="col" style="background:red"></div> 50% - 100%
+</div>
+<div class="legend">Click on link for trend chart. Click on peak in chart to update legend</div>
+<div id="dialog" title="Top Protocols on Link">
+<div id="stripchart" class="trend"></div>
+</div>
+</div>
+<div id="copyright">Real-time analytics provided by  <a href="http://www.sflow-rt.com">sFlow-RT</a></div>
+</body>
+</html>
